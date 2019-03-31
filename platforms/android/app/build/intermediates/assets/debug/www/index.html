@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TP2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    </head>
+    <body>
+        <div id="menblack">
+            <img src="image/croix-png.jpg" id="croix" />
+            <ul id="menu">
+                <li><a href="*">Acceuil</a></li>
+                <li><a href="*">Titre1</a></li>
+                <li><a href="*">Contact</a></li>
+            </ul>
+        </div>
+        <div id="bandeau-haut">
+            <img class="img-bd" id="burger" src="image/burger.png" />
+            <img class="img-bd" id="grille-gp" src="image/logo_motogp.png" alt="grille-gp-2018" />
+            <a href="tel:+330677107054"><img class="img-bd" id="tel" src="image/tel.png" /></a>
+            <a class="text-bandeau" id="acceuil" href="*">Acceuil</a>
+            <a class="text-bandeau" id="titre_1" href="*">Titre 1</a>
+            <a class="text-bandeau" id="contact" href="*">Contact</a>
+            <input id="search" type="text" placeholder="Search" />
+            <input id="btn-search" type="button" value="Search" />
+        </div>
+        <div id="grande-image">
+            <img src="image/grille_moto_gp.jpg" id="grille-moto" alt="grille-motogp-2018" />
+        </div>
+        <div id="paragraphe">
+            <h1 id="titre-parag">Résumé des 10 premières places dans le championnat</h1>
+            <p id="parag">Le championnat a une fois de plus été remporté par Marc Marquez pilote espagnol, qui devance de 71 points Andreas Dovizioso qui finit 2eme et pour finir le poduim on retrouve Valentino Rossi qui est toujours aussi compétitif bien qu'il soit le doyen de la catégorie.<br />
+            Au pied du poduim il y a Maverick vinales suivit par Alex Rins puis à la 5eme place on retrouve le francais Johann Zarco qui termine a une 6eme bonne place pour sa 1ere année en GP.<br />
+            En 7eme place nous retrouvons Cal Crutchchlow suivit par Danillo Petrucci en 8eme, la 9eme place a été récupéré par Jorge Lorenzo et pour finir la 10 eme place est occupé par Andreas Iannone.</p>
+        </div>
+        <div id="image-3-pilote">
+            <figure class="fig">
+                <img id="marquez" src="image/marquez.jpg" alt="Marc Marquez" />
+                <figcaption>Marc Marquez</figcaption>
+            </figure>
+            <figure class="fig">
+                <img id="dovi" src="image/dovi.jpg" alt="Andreas Dovizioso" />
+                <figcaption>Andréas Dovizioso</figcaption>
+            </figure>
+            <figure class="fig">
+                <img id="rossi" src="image/rossi.jpg" alt="Valentino Rossi" />
+                <figcaption>Valentino Rossi</figcaption>
+            </figure>
+            <figure class="fig">
+                <img id="zarco" src="image/zarco.jpg" alt="Johann Zarco" />
+                <figcaption id="zarcFig">Johan Zarco</figcaption>
+            </figure>
+        </div>
+        <div id="map" class="mapForm">
+            
+        </div>
+        <div id="formulaire" class="mapForm">
+            <h2>Formulaire de contact</h2>
+            <form id="formu">
+                <div class="ligne">
+                    <input id="prenom" type="text" placeholder="Prenom" />
+                    <input id="nom" type="text" placeholder="Nom" />
+                </div>
+                <div class="ligne">
+                    <input id="dateNaissance" type="date" placeholder="Date de naissance" />
+                    <input id="villeNaissance" type="text" placeholder="Ville de naissance" />
+                </div>
+                <input id="mail" class="ligne" type="text" placeholder="Adresse mail" />
+                <input id="photo" class="ligne" type="text" placeholder="Photo" />
+                <textarea id="text" class="ligne" placeholder="Message"></textarea>
+                <input id="boutton" class="ligne" type="button" Value="Envoyer" />
+            </form>
+        </div>
+        <div id="bandeauBas">
+            <p id="nompre">LEFOL Antoine TPA</p>
+        </div>
+        <script>
+                function initMap() {
+                    var myLatLng = {lat: 47.955302, lng: 0.211056};
+
+                    // Create a map object and specify the DOM element
+                    // for display.
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      center: myLatLng,
+                      zoom: 15
+                    });
+
+                    // Create a marker and set its position.
+                    var marker = new google.maps.Marker({
+                      map: map,
+                      position: myLatLng,
+                      title: 'Circuit des 24H'
+                    });
+                  }
+
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo_qadhflftYrvl2rnPnSQ9KWIlEMnNt0&callback=initMap"async defer></script>
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="alerte.js"></script>
+    </body>
+</html>

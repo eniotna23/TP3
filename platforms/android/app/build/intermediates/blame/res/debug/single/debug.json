@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_screen.png.flat",
+        "source": "D:\\Utilisateur\\antoine\\Desktop\\Dut info\\Cours DUT info 2\\Web mobile\\TP3\\TP3\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\screen.png"
+    }
+]
